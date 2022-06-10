@@ -185,7 +185,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-06-10 17:06:57 / Modified: 21:01:53" itemprop="dateCreated datePublished" datetime="2022-06-10T17:06:57+08:00">2022-06-10</time>
+      <time title="Created: 2022-06-10 17:06:57 / Modified: 21:24:03" itemprop="dateCreated datePublished" datetime="2022-06-10T17:06:57+08:00">2022-06-10</time>
     </span>
 
   
@@ -204,7 +204,7 @@
 <h2 id="3-install-Hexo"><a href="#3-install-Hexo" class="headerlink" title="3 install Hexo"></a>3 install Hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install -g Hexo-cli</span><br><span class="line">npx Hexo init myBlog</span><br><span class="line">cd myBlog</span><br><span class="line">npm install</span><br><span class="line">npx Hexo g</span><br><span class="line">npx Hexo server</span><br></pre></td></tr></table></figure>
 
 <h2 id="4-Git-repository"><a href="#4-Git-repository" class="headerlink" title="4 Git repository"></a>4 Git repository</h2><p> create repository</p>
-<h2 id="5-GitHub-SSH"><a href="#5-GitHub-SSH" class="headerlink" title="5 GitHub SSH"></a>5 GitHub SSH</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> myBlog$git init</span><br><span class="line"> myBlog$git config user.name &quot;gitId&quot;</span><br><span class="line"> myBlog$git config user.email &quot;gitId@xx.com&quot;</span><br><span class="line"> ssh-keygen -t rsa -C &quot;gitId@xx.com&quot; </span><br><span class="line"> &lt;/Users/$user_name/.ssh/id_rsa</span><br><span class="line"> ssh-keygen -t ed25519 -C &quot;gitId@xx.com&quot;</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h2 id="5-GitHub-SSH"><a href="#5-GitHub-SSH" class="headerlink" title="5 GitHub SSH"></a>5 GitHub SSH</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> myBlog$git init</span><br><span class="line"> myBlog$git config user.name &quot;gitId&quot;</span><br><span class="line"> myBlog$git config user.email &quot;gitId@xx.com&quot;</span><br><span class="line"> ssh-keygen -t rsa -C &quot;gitId@xx.com&quot; </span><br><span class="line"> &lt;/Users/$user_name/.ssh/id_rsa</span><br><span class="line"> ssh-keygen -t ed25519 -C &quot;gitId@xx.com&quot;</span><br><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">repository/setting/Pages  设置域名：www.xxxx.com</span><br><span class="line"></span><br><span class="line">// 域名解析配置</span><br><span class="line">www	CNAME	通用	gitId.github.io	-	3600	</span><br></pre></td></tr></table></figure>
 
 <h2 id="6-修改spoonCat-x2F-config-yml"><a href="#6-修改spoonCat-x2F-config-yml" class="headerlink" title="6 修改spoonCat&#x2F;_config.yml"></a>6 修改spoonCat&#x2F;_config.yml</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: git</span><br><span class="line"> repo: git@github.com:acorngyl/spoonCat.github.io</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
 
@@ -214,7 +214,6 @@
 
 <h2 id="8-常用命令"><a href="#8-常用命令" class="headerlink" title="8 常用命令"></a>8 常用命令</h2>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npx Hexo server  // 启动服务</span><br><span class="line">npx hexo new [layout] &lt;title&gt;  // 生成博客，生成md文件</span><br><span class="line">npx hexo clean // 清理页面html</span><br><span class="line">npx hexo g // 根据md，生成html</span><br><span class="line">npx hexo deploy // 推送git</span><br></pre></td></tr></table></figure>
 
-<p>9</p>
 
       
     </div>
