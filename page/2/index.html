@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -151,82 +151,6 @@
 
 
     <div class="main-inner index posts-expand">
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://acorngyl.github.io/2022/06/17/0%E3%80%811%E7%AD%89%E6%A6%82%E7%8E%87/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Acorn G">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="spoonCat">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | spoonCat">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/06/17/0%E3%80%811%E7%AD%89%E6%A6%82%E7%8E%87/" class="post-title-link" itemprop="url">0、1等概率</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-06-17 22:14:40" itemprop="dateCreated datePublished" datetime="2022-06-17T22:14:40+08:00">2022-06-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-01 00:39:06" itemprop="dateModified" datetime="2022-11-01T00:39:06+08:00">2022-11-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Random01Spoon</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 01不等概率获得01等概率</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> p</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="comment">// 模拟0、1不等概率</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">randNone</span><span class="params">(<span class="type">double</span> p)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> Math.random() &lt; p ? <span class="number">0</span> : <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 0、1等概率</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">randomEq</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">first</span> <span class="operator">=</span> randNone(<span class="number">0.3</span>);</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            first = randNone(<span class="number">0.3</span>);</span><br><span class="line">        &#125; <span class="keyword">while</span> (first == randNone(<span class="number">0.3</span>)); <span class="comment">// 00或11继续循环，出现01或10的概率相等</span></span><br><span class="line">        <span class="keyword">return</span> first;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  1～5等概率获得1～7等概率</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 1～5等概率</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">random04</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="type">int</span>) (Math.random() * <span class="number">5</span> + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 0、1等概率</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">random01</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            m = random04();</span><br><span class="line">        &#125; <span class="keyword">while</span> (m == <span class="number">3</span>);</span><br><span class="line">        <span class="keyword">return</span> m &lt; <span class="number">3</span> ? <span class="number">1</span> : <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 1～7等概率</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">random06</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            m = (random01() &lt;&lt; <span class="number">2</span>) + (random01() &lt;&lt; <span class="number">1</span>) + random01();</span><br><span class="line">        &#125; <span class="keyword">while</span> (m == <span class="number">7</span>);</span><br><span class="line">        <span class="keyword">return</span> m + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">       <span class="type">int</span>[] r01s = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">2</span>];</span><br><span class="line">       <span class="type">int</span> <span class="variable">times</span> <span class="operator">=</span> <span class="number">100000</span>;</span><br><span class="line">       <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">for</span> (; i &lt; times; i++) &#123;</span><br><span class="line">           <span class="type">int</span> <span class="variable">r01</span> <span class="operator">=</span> randNone(<span class="number">0.3</span>);</span><br><span class="line">           r01s[r01]++;</span><br><span class="line">       &#125;       </span><br><span class="line">       System.out.println(<span class="string">&quot;====01不等概率===========&quot;</span>);</span><br><span class="line">       System.out.println(<span class="string">&quot;0 : &quot;</span> + (<span class="type">double</span>)r01s[<span class="number">0</span>] / (<span class="type">double</span>)times + <span class="string">&quot;, 1 : &quot;</span> + (<span class="type">double</span>)r01s[<span class="number">1</span>] / (<span class="type">double</span>)times);</span><br><span class="line"></span><br><span class="line">       <span class="type">int</span>[] r01es = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">2</span>];</span><br><span class="line">       <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; times; i++) &#123;</span><br><span class="line">           <span class="type">int</span> <span class="variable">r01e</span> <span class="operator">=</span> randomEq();</span><br><span class="line">           r01es[r01e]++;</span><br><span class="line">       &#125;       </span><br><span class="line">       System.out.println(<span class="string">&quot;====01等概率===========&quot;</span>);</span><br><span class="line">       System.out.println(<span class="string">&quot;0 : &quot;</span> + (<span class="type">double</span>)r01es[<span class="number">0</span>] / (<span class="type">double</span>)times + <span class="string">&quot;, 1 : &quot;</span> + (<span class="type">double</span>)r01es[<span class="number">1</span>] / times);</span><br><span class="line"></span><br><span class="line">       System.out.println(<span class="string">&quot;====1～7等概率===========&quot;</span>);</span><br><span class="line">       <span class="type">int</span>[] r07s = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">8</span>];</span><br><span class="line">       <span class="keyword">for</span> (i = <span class="number">0</span> ; i &lt; times; i++) &#123;</span><br><span class="line">           <span class="type">int</span> <span class="variable">r07</span> <span class="operator">=</span> random06();</span><br><span class="line">           r07s[r07]++;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; r07s.length; j++) &#123;</span><br><span class="line">           System.out.println(j + <span class="string">&quot; : &quot;</span> + (<span class="type">double</span>)r07s[j] / (<span class="type">double</span>)times);</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
 
     
 
